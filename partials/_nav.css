@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+nav{
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 45, 8, 1) 32%, rgba(99, 255, 0, 1) 100%);
+    width:100%;
+    z-index: 1000;
+    position: fixed;
+    transition: 2s linear;
+}
+
+
+.navbar-brand {
+    font-family: "Platypi", serif;
+    font-weight: 400;
+    display: flex;
+    width:150px;
+   
+    height: auto; 
+   
+}
+
+.logo-icon a{
+    text-decoration: none;
+}
+#good {
+   font-size: 22px;
+   color:white;
+   overflow-y: hidden;
+
+}
+#health {
+    font-size: 22px;
+    color:rgb(200, 235, 200);
+    overflow-y: hidden;
+ }
+.navbar-brand img {
+    width: 100px;
+    position: absolute;
+    margin-top: -23px;
+    margin-left: -23px;
+    height: auto; 
+}
+ 
+#mynavbar .nav-item a {
+    font-size: 1.5vw;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: "Platypi", serif;
+    font-weight: 500;
+   
+}
+
+#mynavbar .nav-item:hover a, #mynavbar .nav-item li.active a {
+    width:100%;
+    height:100%;
+    border-bottom: 2px solid white;
+    color:white;
+    border-radius: 15px;
+}
+.navbar-toggler {
+    background-color: black; /* Set button background color to black */
+    border-color: black; /* Set button border color to black */
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    color: black; /* Set color of the icon inside the button to black */
+}
+
+
+.navbar-toggler:hover {
+    background-color: rgb(243, 54, 7);
+}
+
+.btn {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.btn i {
+    font-size: 16px;
+    color:white 
+}
+
+.btn span{
+    margin: 0;
+    color:white;
+}
+.btn:hover{
+    background-color: green;
+}
+#login img{
+    width:30px;
+    height:27px;
+}
+#login img:hover{
+    width:30px;
+    height:27px;
+    border-radius: 50%;
+    background-color: red;
+}
+.home {
+    height: 80vh;
+    background: url('../partials/rect3.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    font-family: "Platypi", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text {
+    max-width: 40rem;
+    border: 2px solid black;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    margin: auto;
+    border-radius: 1rem; 
+   
+}
+
+.text h1 {
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    transition: .2s ease;
+}
+
+.text p {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.text .btn {
+    font-weight: bold;
+    border-radius: .5rem;
+}
+@media screen and (min-width: 200px) and (max-width: 800px) {
+    #mynavbar .nav-item a {
+      color:white;
+    }
+}

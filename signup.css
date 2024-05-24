@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+nav{
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 45, 8, 1) 32%, rgba(99, 255, 0, 1) 100%);
+    width:100%;
+    z-index: 1000;
+    position: fixed;
+    transition: 2s linear;
+}
+
+
+.navbar-brand {
+    font-family: "Platypi", serif;
+    font-weight: 400;
+    display: flex;
+    width:150px;
+   
+    height: auto; 
+   
+}
+
+.logo-icon a{
+    text-decoration: none;
+}
+#good {
+   font-size: 22px;
+   color:white;
+   overflow-y: hidden;
+
+}
+#health {
+    font-size: 22px;
+    color:rgb(200, 235, 200);
+    overflow-y: hidden;
+ }
+.navbar-brand img {
+    width: 100px;
+    position: absolute;
+    margin-top: -23px;
+    margin-left: -23px;
+    height: auto; 
+}
+ 
+
+
+#mynavbar .nav-item:hover a, #mynavbar .nav-item li.active a {
+    width:100%;
+    height:100%;
+    border-bottom: 2px solid white;
+    color:white;
+    border-radius: 15px;
+}
+.navbar-toggler {
+     /* Set button background color to black */
+    border-color: black; /* Set button border color to black */
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    color: black; /* Set color of the icon inside the button to black */
+}
+
+
+.navbar-toggler:hover {
+    background-color: rgb(243, 54, 7);
+}
+
+.btn {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.btn i {
+    font-size: 16px;
+    color:white 
+}
+
+.btn span{
+    margin: 0;
+    color:white;
+}
+.btn:hover{
+    background-color: green;
+}
+#login img{
+    width:30px;
+    height:27px;
+}
+#login img:hover{
+    width:30px;
+    height:27px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+.form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.wrapper{
+    background-color: black;
+    width:400px;
+   position: relative;
+    border-radius: 20px;
+    padding:30px;
+    box-shadow: 0 0 50px yellowgreen;
+    
+    
+}
+.form-wrapper{
+    overflow-y: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+}
+.wrapper h2{
+    font-size: 30px;
+    color:white;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.remember{
+    margin:-5px 0 15px 5px;
+}
+.remember label{
+    color:white;
+    font-size: 14px;
+}
+.remember label input{
+    accent-color: yellowgreen;
+}
+.wrapper button{
+   position: relative;
+   width:100%;
+   height:40px;
+   background: yellowgreen;
+   box-shadow: 0 0 10px yellowgreen;
+   font-size: 16px;
+   color:black;
+   font-weight: 500;
+   cursor: pointer;
+   border-radius: 30px;
+   border: none;
+   outline: none;
+}
+.sign-up-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+}
+.sign-up-link p{
+    color:white;
+}
+.sign-up-link p a{
+    color:yellowgreen;
+    text-decoration:none ;
+    font-weight: 500;
+}
+.sign-up-link p a:hover{
+    text-decoration: underline;
+}
+

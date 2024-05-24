@@ -1,0 +1,363 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+nav{
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 45, 8, 1) 32%, rgba(99, 255, 0, 1) 100%);
+    width:100%;
+    z-index: 1000;
+    position: fixed;
+    transition: 2s linear;
+}
+
+
+.navbar-brand {
+    font-family: "Platypi", serif;
+    font-weight: 400;
+    display: flex;
+    width:150px; 
+   
+    height: auto; 
+   
+}
+
+.logo-icon a{
+    text-decoration: none;
+}
+#good {
+   font-size: 22px;
+   color:white;
+   overflow-y: hidden;
+
+}
+#health {
+    font-size: 22px;
+    color:rgb(200, 235, 200);
+    overflow-y: hidden;
+ }
+.navbar-brand img {
+    width: 100px;
+    position: absolute;
+    margin-top: -23px;
+    margin-left: -23px;
+    height: auto; 
+}
+ nav button{
+    width: 50px; 
+    height: 40px; 
+    padding: 6px 2px; 
+    border-radius: 5px; 
+    font-size: 12px; 
+    text-align: center;
+    background-color: white;
+    cursor:pointer;
+    overflow-y: hidden;
+    font-weight: 500;
+}
+
+nav button img {
+    width: 100%; 
+    height: auto;
+}
+
+nav button:hover{
+    background-color: rgb(171, 215, 164);
+
+}
+nav button span::after{
+    height:100%;
+    width:0%;
+    content:'';
+    background-color: black;
+    position: absolute;
+    top:0;
+    right:0;
+    color:green;
+    transition: 0.3;
+}
+#mynavbar #HomeLink{
+    color:red;
+}
+#mynavbar .nav-item a {
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: "Platypi", serif;
+    font-weight: 500;
+   
+}
+
+#mynavbar .nav-item:hover a, #mynavbar .nav-item li.active a {
+    width:100%;
+    height:100%;
+    border-bottom: 2px solid white;
+    color:white;
+    border-radius: 15px;
+}
+.navbar-toggler{
+    background-color: white;
+    outline: 2px solid green;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.navbar-toggler:hover{
+    background-color: rgb(225, 235, 225);
+    margin-bottom: 5px;
+  
+}
+.btn {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+
+.btn span{
+    margin: 0;
+    color:white;
+}
+.btn:hover{
+    background-color: green;
+    
+}
+
+#login img:hover{
+    width:30px;
+    height:27px;
+    border-radius: 50%;
+    background-color: red;
+}
+.home {
+    height: 75vh;
+    background-color: black;
+    font-family: "Platypi", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.text {
+    max-width: 40rem;
+    border: 2px solid black;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: white;
+    margin: auto;
+    border-radius: 1rem; 
+   
+}
+.text h1 span {
+    text-transform: uppercase;
+  
+    font-weight: bold;
+    transition: .2s ease;
+}
+.text h1 {
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    transition: .2s ease;
+}
+
+.text p {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+.text p:hover{
+    color:yellowgreen
+}
+
+a .btn1 {
+    font-weight: bold;
+    border-radius: .5rem;
+    transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+  width:70px;
+  height:50px;
+
+}
+.btn1:hover {
+    background: linear-gradient(35deg, green, rgb(191, 233, 6));
+
+    color:white;
+    width: 100px;
+    box-shadow: 0 0 7px yellowgreen;
+}
+
+
+
+.col .text-center h1{
+ overflow-y: hidden;
+}
+.row .col-md-6 h2{
+    overflow-y: hidden;
+    background-color: black;
+    color:white;
+}
+.about,.eating,.news,.services{
+    background-color: black;
+   
+}
+/* Target h1 elements within elements with the classes .about, .eating, .news, and .services */
+
+
+.about .container img {
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 90%; 
+    background-size: 100% 100%;
+    margin-top: 10px;
+    align-items: center;
+    background-size: cover;
+    border-color: 2px yellowgreen;
+    animation: border-color-change 5s infinite;
+}
+@keyframes border-color-change {
+    0% { border-color: yellowgreen;box-shadow: 0 0 20px yellowgreen; } 
+    25% { border-color: skyblue;box-shadow: 0 0 20px skyblue; } 
+    50% { border-color: rgb(170, 123, 219);box-shadow: 0 0 20px rgb(170, 123, 219); } 
+    100% { border-color: rgb(236, 88, 88);box-shadow: 0 0 20px rgb(236, 88, 88); } 
+}
+.container .row .col h1{
+    overflow-y: hidden;
+    
+}
+.heading h1{
+    font-family: "Platypi", serif;
+}
+.eating .card-container{
+    text-align: center;
+    border-radius: 10em 10em 0 0;
+  
+}
+.eating .card-img{
+    border-radius: 10em 10em 0 0;
+    box-shadow: 0 0 20px white;
+    animation: border-color-change 5s infinite;
+}
+.eating .card-container .card_data .btn,.news .btn {
+    background-color: green;
+    padding: 0.75em;
+    border-radius: 10px;
+    overflow: hidden;
+   
+}
+.eating .card-container .card_data .btn .btn1:hover{
+    transform: scaleX(15deg);
+    box-shadow: 2px yellowgreen;
+}
+
+.news .btn:hover {
+    background-color: red;
+    
+}
+
+.eating .card_title{
+    overflow-y: hidden;
+    color:white;
+}
+.eating .btn a{
+    text-decoration: none;
+    color:white;
+}
+.eating .btn a:hover{
+    font-size: 20px;
+    transform: scaleX(15deg);
+    box-shadow: 2px yellowgreen;
+}
+
+.news .card{
+    height:520px;
+    border-color: 5px yellowgreen;
+    animation: border-color-change 5s infinite;
+    border-radius: 50px;
+}
+.news img{
+    height:200px;
+    overflow-y: hidden;
+} 
+.news .card-body{
+    overflow-y: hidden;
+}
+.news .card-body h4{
+    overflow-y: hidden;
+}
+.news .card-body .card-text{
+    overflow-y: hidden;
+}
+
+
+
+.services .service-content {
+    text-align: center;
+}
+
+.services .plan, .services .various-plans, .services .meetings {
+    font-size: 25px;
+    text-align: center;
+   
+}
+
+.services .price-and-duration {
+    font-size: 30px;
+    text-align: center;
+    overflow-y: hidden;
+   
+  
+    justify-content: center;
+    background-color: green;
+    color:white;
+   
+}
+
+.services .btn {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer h5{
+    color:#00ff2a;
+}
+footer a{
+    text-decoration: none;
+    color:white;
+}
+footer .nav-link{
+    color:white;
+}
+@media (max-width: 400px) {
+    .home {
+        height: 110vh; 
+    }
+
+}
+
+
+
+

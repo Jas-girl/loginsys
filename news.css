@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+nav{
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 45, 8, 1) 32%, rgba(99, 255, 0, 1) 100%);
+    width:100%;
+    z-index: 1000;
+    position: fixed;
+    transition: 2s linear;
+}
+
+
+.navbar-brand {
+    font-family: "Platypi", serif;
+    font-weight: 400;
+    display: flex;
+    width:150px; 
+   
+    height: auto; 
+   
+}
+
+.logo-icon a{
+    text-decoration: none;
+}
+#good {
+   font-size: 22px;
+   color:white;
+   overflow-y: hidden;
+
+}
+#health {
+    font-size: 22px;
+    color:rgb(200, 235, 200);
+    overflow-y: hidden;
+ }
+.navbar-brand img {
+    width: 100px;
+    position: absolute;
+    margin-top: -23px;
+    margin-left: -23px;
+    height: auto; 
+}
+ nav button{
+    width: 50px; 
+    height: 40px; 
+    padding: 6px 2px; 
+    border-radius: 5px; 
+    font-size: 12px; 
+    text-align: center;
+    background-color: white;
+    cursor:pointer;
+    overflow-y: hidden;
+    font-weight: 500;
+}
+
+nav button img {
+    width: 100%; 
+    height: auto;
+}
+
+nav button:hover{
+    background-color: rgb(171, 215, 164);
+
+}
+nav button span::after{
+    height:100%;
+    width:0%;
+    content:'';
+    background-color: black;
+    position: absolute;
+    top:0;
+    right:0;
+    color:green;
+    transition: 0.3;
+}
+#mynavbar #newsLink{
+    color:red;
+}
+#mynavbar .nav-item a {
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: "Platypi", serif;
+    font-weight: 500;
+   
+}
+
+#mynavbar .nav-item:hover a, #mynavbar .nav-item li.active a {
+    width:100%;
+    height:100%;
+    border-bottom: 2px solid white;
+    color:white;
+    border-radius: 15px;
+}
+.navbar-toggler{
+    background-color: white;
+    outline: 2px solid green;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-toggler:hover{
+    background-color: rgb(225, 235, 225);
+}
+.btn {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.btn i {
+    font-size: 16px;
+    color:white 
+}
+
+.btn span{
+    margin: 0;
+    color:white;
+}
+.btn:hover{
+    background-color: green;
+}
+#login img{
+    width:30px;
+    height:27px;
+}
+#login img:hover{
+    width:30px;
+    height:27px;
+    border-radius: 50%;
+    background-color: red;
+}
+.home {
+    height: 85vh;
+    background-color: black;
+    font-family: "Platypi", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    max-width: 40rem;
+    border: 2px solid black;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: white;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+.text h1 span {
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.text h1 {
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+.text p {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+
+
+.text .btn {
+    font-weight: bold;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease, width 2s linear 1s;
+    align-items: center;
+    justify-content: center;
+}
+
+.text .btn:hover {
+    background-color: green;
+    width: 150px;
+}
+.slide-title ,.slide-time ,.slide-text, .slide-more{
+    overflow-y: hidden;
+    
+}
+
+
+.card-wrapper{
+    height:350px
+}
+.card-wrapper .slide-title{
+    font-family: "Platypi", serif;
+    font-weight: bold;
+}
+
+.news h1{
+    color:yellow;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: "Platypi", serif;
+    font-weight: 500;
+}
+.news h1:hover{
+    width:100%;
+    border-bottom: 2px solid white;
+    color:white;
+    border-radius: 15px;
+}
+
+@media (max-width: 550px) {
+    .home {
+        height: 110vh; 
+    }
+}.card {
+    display: flex; /* Display as flex container */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: center; /* Align children vertically */
+    align-items: center; /* Align children horizontally */
+    font-size: 15px; /* Set font size */
+    border-radius: 15px; /* Apply rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+ 
+    box-shadow: 0 0 10px yellow; /* Set box-shadow */
+}
+
+
+
